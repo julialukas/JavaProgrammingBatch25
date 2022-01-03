@@ -19,7 +19,7 @@ public class MultipleWords {
 
        String words = "knife, wooden spoons, plates, cups, forks, pan, pot, trash can, fridge, dish washer";
 
-       String [] splitArr= words.split(",");
+       String [] splitArr= words.split(", ");
 
         System.out.println(Arrays.toString(splitArr));
 
