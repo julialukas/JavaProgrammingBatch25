@@ -65,12 +65,47 @@ Exception handlings:
 
 
 
+difference between
+final vs finally vs finalize
+final - keyword
+finally - block
+finalized - method
+The final, finally, and finalize are keywords in Java that are used in exception handling.
+Each of these keywords has a different functionality. The basic difference between final,
+finally and finalize is that the final is an access modifier,
+finally is the block in Exception Handling and finalize is the method of object class.
+
+finalize() method of object class is a method
 
 
 
 
 
+you can use try catch shortcut
+for Mac ->command+option+T
+
+
+test cases
+test plans
+test strategies
 
 
 
-
+     * Interview Question: difference between  final , finally and finalize
+     *
+     * Final: is the key word  used with  classes, methods,variables.
+     * Final variable can not be modified.Final method cannot be overridden by subClass.Final class cannot be inherited.
+     * Final method is executed only when we call it.
+     *
+     *
+     * Finally : is The  block in Java Exception Handling to execute the important code whether the exception occurs or not.
+     * Finally block is always related to the try and catch block in exception handling.
+     * How to stop  the execution of  finally block ? interview question
+     * Explicitly terminate the program System.exit(0), otherwise finally block will never stop , always gets executed
+     *
+     *
+     * Finalize: is a method used to perform clean up processing just before object is garbage collected.
+     * Every single class have a parent java.lang.Object,every single object needs a finalize method , this method is automatically  called by the Garbage -Collector
+     * Garbage collector will call  the finalize method , to destroy the object
+     *
+     *
