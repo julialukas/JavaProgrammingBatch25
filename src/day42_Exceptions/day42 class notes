@@ -1,0 +1,44 @@
+Exception Handlings:
+
+ 		1. try & catch: used for handling checked & unchecked exceptions
+
+ 				try{
+ 					exception code
+ 				}catch(ExceptionType e){
+ 					e.printStackTrace();
+ 				}
+
+ 		2. throws: used for handling checked exceptions ONLY
+        Caller of the method will be responsible for handling the exception
+
+        Throws keyword should never be used for unchecked exceptions, only for temporary solutions
+
+
+        universal solution to handle any exception is Try Catch block
+        secondary solution would be Throws
+        (if you  will not call that method anywhere else)
+
+
+
+
+
+
+Variables defined inside methods, constructors or blocks are called local variables.
+The variable will be declared and initialized within the method and it will be destroyed when the method has completed.
+
+Instance variables are variables within a class but outside any method.
+These variables are instantiated when the class is loaded. Local variables are declared within a method.
+
+Instance variables are declared inside a class but not within a method.
+
+Local variables do not get a default value.
+The compiler complains if you try to use a local variable before before the variable is initialized.
+
+However, instance variables always get a default value.
+ If you don't explicitly assign a value to an instance variable, the instance variable still has a value.
+
+integers = 0
+
+Boolean = false
+
+String = null

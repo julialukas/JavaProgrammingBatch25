@@ -1,0 +1,120 @@
+
+OOP Encapsulation: hiding the data
+OOP Inheritance: creating IS A relation between classes (parent/child or super/sub)
+          method overriding: giving different implementations to the method
+
+OOP PRINCIPLES
+• There are 4 Object Oriented Programming (OOP) principles: • Encapsulation
+• Inheritance
+• Abstraction
+• Polymorphism
+
+Car Task:
+car: make, model, color, year, price..
+start(), stop()
+Honda: start() twist the key to ignition
+Audi: start() push start
+Tesla: start() voice activated
+
+ABSTRACTION: focusing on the essentials without worrying about the small details (implementations) of the method
+ABSTRACTION
+-process of hiding implementation details from the user
+-only the functionality will be provided to the user
+-focusing on the essential qualities of something rather than one specific example.(Ignoring the irrelevant & unimportant)
+-user will have the information on what the object does instead of how it does
+
+Abstract Method:
+• A method that does not have body, only signature
+• A method that’s meant to be overridden
+• Abstract keyword is used to create abstract method
+
+public abstract void eat(); // method without the body implementation
+public abstract double area(); // method without the body implementation
+
+Abstract Method Rules:
+• An abstract method can not be static
+• An abstract method can not be final
+• An abstract method can not have private access modifier
+• An abstract method does not have body
+• An abstract method can only be created in an abstract class or in an interface
+
+Abstract Class:
+• A class that’s meant to be a parent (super) class
+• Goal is to provide reusable variables and methods to sub classes
+• Abstract keyword is used to create the abstract class
+• An abstract class can not be instantiated
+
+public abstract class Animal{}
+
+Super (parent) class is responsible to provide the variables and methods
+
+that are needed to the all the sub classes without worrying about the small details
+
+Sub (child) classes are responsible for providing the implementations that are needed
+
+Creating Object
+• Abstract class is meant to be inherited only, not meant to be instantiated
+• Abstract class is not a concrete class and object has to be concrete
+• A sub class of abstract class is called concrete class, and it can be instantiated
+• A Concrete class must implement all the inherited abstract methods
+
+Abstract Class vs Regular class (Concrete)Regular class
+Regular class:
+can have constructors, instances and statics
+Regular class can be instantiated
+Regular class can not have abstract method
+Regular class can be declared as final
+
+Abstract class:
+can have constructors, instances and statics
+Abstract class can not be instantiated
+Abstract class can have abstract method
+Abstract class can not be declared as final
+
+INTERFACE
+-its a template, a blueprint of a class
+-Interface keyword is used to create interface
+-specifies the behaviors that a c;ass should implement
+-provides additional methods that subclasses need
+-we can achieve 100% abstraction using interfaces
+
+public interface Flyable{
+public void abstract fly();
+}
+PROPERTIES OF INTERFACE
+-variables are static & final by default
+-interface can have static methods, abstract methods and default methods
+-public is the only access modifier that can be used in interface and given by default
+-abstract keyword is given by default to the abstract methods of interface
+
+public interface Interface1{
+int a = 100; // static & final by default
+void method1(); //abstract method
+}
+
+Variables: static & final variable only
+Methods: static, abstract and default methods only
+
+public interface Interface1{
+int a = 100; // static & final
+void method1(); // abstract method
+static void method2(){ // static method
+System.out.println("Static Method");
+}
+default void method3(){ // default method
+System.out.println("Static Method");
+}
+}
+INTERFACE CANNOT HAVE:
+- instance variables - instance methods - constructors - blocks - can't create objects from interface
+
+IMPLEMENTING THE INTERFACE
+-class can extend only one superclass, but java allows a class to implement multiple interfaces
+-implements keyword is used to inherit from interface
+-when a class implements multiple interfaces, it must implement(override) all the abstract methods
+public class MyClass implements Interface1, Interface2, Interface3{}
+
+
+-evey time when you create parent class if a method need multiple different implementations in different objects (sub classes)
+then you should make the method abstract when you created at the first place (in super class)
+-base is parent class, derived is child class. concrete is non-abstract child class

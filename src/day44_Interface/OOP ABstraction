@@ -1,0 +1,39 @@
+
+
+OOP Abstraction: concentrating on essentials (what it is), not worrying about the details/implementations (how its done)
+
+Abstract method: a method without implementation/body
+             - meant to be overridden
+
+             area();
+             perimeter();
+             ...
+             eat();
+             ..
+
+             Two ways to achieve abstraction:
+             1. Abstract class
+             2. Interface
+
+             Abstract class: meant to be super class (parent)
+             can not be final
+             Not concrete (can not create object)
+             can have all the methods, variables, and blocks of non-abstract class + abstract methods
+
+
+setter is public means you can ALWAYS call it and set the value of the instance variable,
+so if you do not add the conditions in the setter it will create bug when you set the variable after creating the object,
+therefore if there is any condition has to be given for setting that variable you MUST give it in the setter.
+as for constructor you can give that same conditions again by rewriting all the if statement
+or you can call the setter to give its condition and set it at the same time.
+
+
+
+Final:  is the keyword and access modifier which is used to apply restrictions on a class, method or variable.
+Final keyword is used with the classes, methods and variables.
+1) Once declared, final variable becomes constant and cannot be modified.
+(2) final method cannot be overridden by sub class.
+(3) final class cannot be inherited.
+Final method is executed only when we call it.
+
+if parent class has any abstract method, then the sub classes (if they are non abstract classes) they MUST override it

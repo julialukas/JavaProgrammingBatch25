@@ -108,4 +108,13 @@ test strategies
      * Every single class have a parent java.lang.Object,every single object needs a finalize method , this method is automatically  called by the Garbage -Collector
      * Garbage collector will call  the finalize method , to destroy the object
      *
-     *
+     *How to handle a bug:
+
+      It depends when or in which test I find a bug.
+      When I find a bug during the sprint, I inform my developer first, it could be my frontend, or backend developer depends on where I found the bug, then I create a bug ticket in Jira.
+
+      When I create a bug ticket, I provide reproduce steps of the test case, the data  I used to test my test case, and [] where I executed my test case. I define bug severity  level which indicates how much impact does the bug has to our app. Our developers define the priority level to decide how soon the bug should fixed.
+
+      When I find a bug in major regression, bug reports are also created, and we assign them our BA, all the developers and the business team conduct bug evaluation meeting to handle it.
+      When I find a bug in smoke test, then I find out the failed scenarios from Jenkins, and try to run locally, and manually as well. if the bugs are still appear, then I will create a bug ticket, and we discuss it in our  daily stand up meeting.
+
